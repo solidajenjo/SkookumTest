@@ -1,0 +1,12 @@
+// Material Editor Tutorial
+//
+// UE4 name of this class: MaterialEditorTutorial_C
+
+// UE4 Asset Name: MaterialEditorTutorial
+// UE4 Package Name: "/Engine/Tutorial/SubEditors/MaterialEditorTutorial"
+
+annotations: &reflected_data &name("MaterialEditorTutorial_C")
+
+$$ @
+
+$$ .

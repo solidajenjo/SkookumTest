@@ -22,5 +22,5 @@
     //SystemLib.print_screen("Loc ", loc, " Fw ", fw, " V ", @sphere.physics_linear_velocity, " V0 ", @velocity)
     
     @sphere.physics_linear_velocity_set(fw * @velocity)
-    @velocity += 0.01
+    @velocity += 10.0
   ]

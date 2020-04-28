@@ -10,7 +10,7 @@ annotations: &reflected_data &name("PROTO_BP_AnimBlueprint_0_C")
 $$ @
 
 /* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Unsupported, Skipped in config or marked EDITOR_ONLY */
-/* &raw("AnimGraphNode_Root_A96C0BC94C9BCDB2959F48997902D658")AnimNode_Root !@anim_graph_node_root_a96c // Unsupported, Skipped in config or marked EDITOR_ONLY */
+/* &raw("AnimGraphNode_Root_61322C804B07EEB9721EECB1473F1D98")AnimNode_Root !@anim_graph_node_root_6132 // Unsupported, Skipped in config or marked EDITOR_ONLY */
 
 $$ @anim_graph
 // Anim Graph

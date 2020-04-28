@@ -10,6 +10,7 @@ annotations: &reflected_data &name("BP_Projectile_C")
 $$ @
 
 /* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame // Unsupported, Skipped in config or marked EDITOR_ONLY */
+&raw("Sphere2")        StaticMeshComponent     !@sphere_2        // Sphere 2
 &raw("Sphere")         StaticMeshComponent     !@sphere          // Sphere
 &raw("ParticleSystem") ParticleSystemComponent !@particle_system // Particle System
 &raw("Velocity")       Real                    !@velocity        // Velocity
