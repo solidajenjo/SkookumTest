@@ -1,0 +1,12 @@
+// FBXImporter Utils
+//
+// UE4 name of this class: FBXImporterUtils_C
+
+// UE4 Asset Name: FBXImporterUtils
+// UE4 Package Name: "/DatasmithContent/Blueprints/FBXImporter/FBXImporterUtils"
+
+annotations: &reflected_data &name("FBXImporterUtils_C")
+
+$$ @
+
+$$ .

@@ -1,0 +1,17 @@
+// BP Projectile
+//
+// UE4 name of this class: BP_Projectile_C
+
+// UE4 Asset Name: BP_Projectile
+// UE4 Package Name: "/Game/Blueprints/BP_Projectile"
+
+annotations: &reflected_data &name("BP_Projectile_C")
+
+$$ @
+
+/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame // Unsupported, Skipped in config or marked EDITOR_ONLY */
+&raw("Sphere")         StaticMeshComponent     !@sphere          // Sphere
+&raw("ParticleSystem") ParticleSystemComponent !@particle_system // Particle System
+&raw("Velocity")       Real                    !@velocity        // Velocity
+
+$$ .
