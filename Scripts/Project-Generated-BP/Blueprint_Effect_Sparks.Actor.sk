@@ -1,0 +1,15 @@
+// Blueprint Effect Sparks
+//
+// UE4 name of this class: Blueprint_Effect_Sparks_C
+
+// UE4 Asset Name: Blueprint_Effect_Sparks
+// UE4 Package Name: "/Game/StarterContent/Blueprints/Blueprint_Effect_Sparks"
+
+annotations: &reflected_data &name("Blueprint_Effect_Sparks_C")
+
+$$ @
+
+&raw("Sparks Audio") AudioComponent          !@sparks_audio // Sparks Audio
+&raw("Sparks")       ParticleSystemComponent !@sparks       // Sparks
+
+$$ .

@@ -1,0 +1,50 @@
+// Customizable sky sphere that mimics the effects of atmospheric fog
+//
+// UE4 name of this class: BP_Sky_Sphere_C
+
+// UE4 Asset Name: BP_Sky_Sphere
+// UE4 Package Name: "/Engine/EngineSky/BP_Sky_Sphere"
+
+annotations: &reflected_data &name("BP_Sky_Sphere_C")
+
+$$ @
+
+&raw("SkySphereMesh")                     StaticMeshComponent     !@sky_sphere_mesh                    // Sky Sphere Mesh
+&raw("Base")                              SceneComponent          !@base                               // Base
+&raw("Sky material")                      MaterialInstanceDynamic !@sky_material                       // Sky Material
+&raw("Refresh material")                  Boolean                 !@refresh_material?                  // Use this to update the sky material after moving  a directional light
+&raw("Directional light actor")           DirectionalLight        !@directional_light_actor            // Assign your level's directional light actor to this variable to  match the sky's sun position and color
+&raw("Colors determined by sun position") Boolean                 !@colors_determined_by_sun_position? // If enabled, sky colors will change according to the sun's position
+&raw("Sun height")                        Real                    !@sun_height                         // If no directional light is assigned, this value determines the height of the sun
+&raw("Sun brightness")                    Real                    !@sun_brightness                     // Brightness multiplier for the sun disk
+&raw("Horizon Falloff")                   Real                    !@horizon_falloff                    // Affects the size of the gradient from zenith color to horizon color
+&raw("Zenith Color")                      Color                   !@zenith_color                       // Zenith Color
+&raw("Horizon color")                     Color                   !@horizon_color                      // Horizon Color
+&raw("Cloud color")                       Color                   !@cloud_color                        // Cloud Color
+&raw("Overall Color")                     Color                   !@overall_color                      // Overall Color
+&raw("Cloud speed")                       Real                    !@cloud_speed                        // Panning speed for the clouds
+&raw("Cloud opacity")                     Real                    !@cloud_opacity                      // Opacity of the panning clouds
+&raw("Stars brightness")                  Real                    !@stars_brightness                   // Multiplier for the brightness of the stars when the sun is below the horizon
+&raw("Horizon color curve")               CurveLinearColor        !@horizon_color_curve                // Horizon Color Curve
+&raw("Zenith color curve")                CurveLinearColor        !@zenith_color_curve                 // Zenith Color Curve
+&raw("Cloud color curve")                 CurveLinearColor        !@cloud_color_curve                  // Cloud Color Curve
+
+$$ @refresh_material
+// Refresh Material
+//
+// UE4 name of this method: RefreshMaterial
+
+&aka("RefreshMaterial")
+
+() 
+
+$$ @update_sun_direction
+// Update Sun Direction
+//
+// UE4 name of this method: UpdateSunDirection
+
+&aka("UpdateSunDirection")
+
+() 
+
+$$ .

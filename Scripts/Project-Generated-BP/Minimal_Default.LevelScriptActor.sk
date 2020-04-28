@@ -1,0 +1,12 @@
+// Minimal Default
+//
+// UE4 name of this class: Minimal_Default_C
+
+// UE4 Asset Name: Minimal_Default
+// UE4 Package Name: "/Game/StarterContent/Maps/Minimal_Default"
+
+annotations: &reflected_data &name("Minimal_Default_C")
+
+$$ @
+
+$$ .
