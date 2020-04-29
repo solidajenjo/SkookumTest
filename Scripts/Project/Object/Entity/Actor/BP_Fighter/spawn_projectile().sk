@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------------------
+// Method description...
+// 
+// Params:
+//   arg1: 
+//
+// Return Params:
+//   rarg1: 
+//
+// Returns: 
+//
+// Notes:     
+// Examples:  
+// See:       
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+    if @use_hard_point_1?
+      [!hp : @hard_point_1 BP_Projectile.spawn_at_xform(hp.component_to_world)]
+    else
+      [!hp2 : @hard_point_2 BP_Projectile.spawn_at_xform(hp2.component_to_world)]    
+    
+    @use_hard_point_1? := not @use_hard_point_1?
+  ]

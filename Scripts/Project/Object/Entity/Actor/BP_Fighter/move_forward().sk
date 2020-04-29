@@ -1,0 +1,25 @@
+&blueprint
+//---------------------------------------------------------------------------------------
+// Method description...
+// 
+// Params:
+//   arg1: 
+//
+// Return Params:
+//   rarg1: 
+//
+// Returns: 
+//
+// Notes:     
+// Examples:  
+// See:       
+//---------------------------------------------------------------------------------------
+
+() 
+  [  
+    !fw : actor_right_vector
+    !loc : actor_location
+    //SystemLib.print_screen("Loc ", loc, " Fw ", fw, " V ", @sphere.physics_linear_velocity, " V0 ", @velocity)
+    
+    @sphere.physics_linear_velocity_set(fw * @velocity)
+  ]

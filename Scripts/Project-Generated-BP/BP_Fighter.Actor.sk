@@ -1,0 +1,22 @@
+// BP Fighter
+//
+// UE4 name of this class: BP_Fighter_C
+
+// UE4 Asset Name: BP_Fighter
+// UE4 Package Name: "/Game/Blueprints/BP_Fighter"
+
+annotations: &reflected_data &name("BP_Fighter_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame  // Unsupported, Skipped in config or marked EDITOR_ONLY */
+&raw("PT_Thruster")   ParticleSystemComponent !@pt_thruster       // PT Thruster
+&raw("Sphere2")       StaticMeshComponent     !@sphere_2          // Sphere 2
+&raw("Sphere1")       StaticMeshComponent     !@sphere_1          // Sphere 1
+&raw("Sphere")        StaticMeshComponent     !@sphere            // Sphere
+&raw("HardPoint2")    SceneComponent          !@hard_point_2      // Hard Point 2
+&raw("HardPoint1")    SceneComponent          !@hard_point_1      // Hard Point 1
+&raw("useHardPoint1") Boolean                 !@use_hard_point_1? // Use Hard Point 1
+&raw("velocity")      Real                    !@velocity          // Velocity
+
+$$ .
