@@ -1,0 +1,6 @@
+() 
+  [
+    !sp : @blue_spawn_point
+    !f : BP_Fighter.spawn_at_xform(sp.component_to_world)  
+    f.set_material(@mt_blue)     
+  ]

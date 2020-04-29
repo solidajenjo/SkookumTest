@@ -1,0 +1,7 @@
+() 
+  [
+     loop[
+       spawn_blue
+      _wait(@@random.uniform_range(@min_spawn_time, @max_spawn_time))
+     ]
+  ]

@@ -1,0 +1,23 @@
+// BP World
+//
+// UE4 name of this class: BP_World_C
+
+// UE4 Asset Name: BP_World
+// UE4 Package Name: "/Game/Blueprints/BP_World"
+
+annotations: &reflected_data &name("BP_World_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame   // Unsupported, Skipped in config or marked EDITOR_ONLY */
+&raw("RedSpwanPoint")    SceneComponent      !@red_spwan_point    // Red Spwan Point
+&raw("BlueSpawnPoint")   SceneComponent      !@blue_spawn_point   // Blue Spawn Point
+&raw("Sphere1")          StaticMeshComponent !@sphere_1           // Sphere 1
+&raw("Sphere")           StaticMeshComponent !@sphere             // Sphere
+&raw("DefaultSceneRoot") SceneComponent      !@default_scene_root // Default Scene Root
+&raw("minSpawnTime")     Real                !@min_spawn_time     // Min Spawn Time
+&raw("maxSpawnTime")     Real                !@max_spawn_time     // Max Spawn Time
+&raw("MT_blue")          Material            !@mt_blue            // MT Blue
+&raw("MT_red")           Material            !@mt_red             // MT Red
+
+$$ .
