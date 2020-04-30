@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "WorldCreatorSync",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "BiteTheBytes UG",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "WorldCreatorSync",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
